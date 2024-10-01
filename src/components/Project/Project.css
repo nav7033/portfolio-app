@@ -1,0 +1,273 @@
+.Container {
+    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
+}
+
+
+.Wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+    padding: 10px 0px 100px 0;
+    gap: 12px;
+
+}
+
+@media (max-width: 960px) {
+    .Wrapper {
+        flex-direction: column;
+    }
+
+}
+
+.Title {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #F2F3F4,
+
+}
+
+
+@media (max-width: 768px) {
+    .Title {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+}
+
+
+.Desc {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    color: #b1b2b3;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .Desc {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+}
+
+.ToggleButtonGroup {
+    display: flex;
+    border: 1.5px solid #F2F3F4;
+    color: #F2F3F4;
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 22px 0px;
+}
+
+
+
+@media (max-width: 768px) {
+    .ToggleButtonGroup {
+        font-size: 12px;
+    }
+
+}
+
+.ToggleButton {
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+.ToggleButton:hover {
+    background: #854CE6;
+}
+
+
+
+@media (max-width: 768px) {
+    .ToggleButton {
+        padding: 6px 8px;
+        border-radius: 4px;
+    }
+}
+
+.Divider {
+    width: 1.5px;
+    background: #F2F3F4;
+}
+
+
+
+
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.Button{
+    display: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+    
+
+.Card {
+    width: 330px;
+    height: 490px;
+    background-color: #171721;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    overflow: hidden;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all 0.5s ease-in-out;
+}
+    
+    
+    
+.Card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+    filter: brightness(1.1); 
+}
+.Card:hover:no-button{
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+    filter: brightness(1.1); 
+}
+
+.Image {
+    width: 100%;
+    height: 180px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+}
+   
+
+
+.Tags{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+    
+
+
+.Tag {
+    font-size: 12px;
+    font-weight: 400;
+    color:#854CE6;
+    background-color: #854CE6 + 15;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+    
+
+
+ .Details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 2px;
+ }
+   
+.Title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b1b2b3;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    
+
+
+.Date {
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: 400;
+    color: #b1b2b3;
+}
+    
+   
+
+@media only screen and (max-width: 768px){
+    .Date{
+        font-size: 10px;
+    }
+    
+}
+
+
+.Description {
+    font-weight: 400;
+    color:#b1b2b3;
+    overflow: hidden;
+    margin-top: 8px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+   
+
+
+.Members{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+    
+
+.Avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: -10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 3px solid #171721;
+    
+}
+    

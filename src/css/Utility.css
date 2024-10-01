@@ -1,0 +1,38 @@
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items:center ;
+
+}
+
+.btn{
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    
+}
+.btn-primary{
+    background:yellow;
+    color: black;
+    margin-left: 30px;
+    margin-top: -4%;
+
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: rgba(255, 255, 0, 0.966);
+    color: rgba(255, 255, 0, 0.932);
+
+}
+.flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content:center;
+}
